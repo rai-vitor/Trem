@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
     trem1 = new Trem(1, 60, 30, 100);
     connect(trem1,SIGNAL(updateGUI(int,int,int)),SLOT(updateInterface(int,int,int)));
 
-    trem2 = new Trem(2, 330, 30, 300);
+    trem2 = new Trem(2, 330, 30, 200);
     connect(trem2,SIGNAL(updateGUI(int,int,int)),SLOT(updateInterface(int,int,int)));
 
     trem3 = new Trem(3, 600, 30, 400);
