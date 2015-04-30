@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    trem1 = new Trem(1, 60, 30, 200);
+    trem1 = new Trem(1, 60, 30, 100);
     connect(trem1,SIGNAL(updateGUI(int,int,int)),SLOT(updateInterface(int,int,int)));
 
     trem2 = new Trem(2, 330, 30, 300);
