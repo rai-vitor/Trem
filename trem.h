@@ -2,11 +2,12 @@
 #define TREM_H
 
 #include <QThread>
-
+#include "semaforo.h"
+#include <QVector>
 class Trem: public QThread{
  Q_OBJECT
 public:
-    Trem(int, int, int, int);
+    Trem(int, int, int, int, QVector<Semaforo*>);
     void run();
     void finalizar();
     void mover();
@@ -22,6 +23,7 @@ private:
    int deslocX;
    int deslocY;
    bool stop;
+   QVector<Semaforo*> vetorSemaforos;
 };
 
 #endif // TREM_H

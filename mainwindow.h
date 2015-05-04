@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include "trem.h"
-
+#include "semaforo.h"
 namespace Ui {
 class MainWindow;
 }
@@ -31,6 +31,8 @@ private:
     Trem *trem4;
     Trem *trem5;
     Trem *trem6;
+    QVector<Semaforo*> vetor;
+    Semaforo *sem1, *sem2, *sem3, *sem4, *sem5, *sem6;
 };
 
 #endif // MAINWINDOW_H
