@@ -97,7 +97,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="botao_iniciar">
     <property name="geometry">
      <rect>
       <x>830</x>
@@ -107,7 +107,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Ligar</string>
+     <string>Iniciar</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_trilho3_2">
@@ -289,7 +289,7 @@
    <widget class="QLabel" name="label_trem2">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>330</x>
       <y>30</y>
       <width>21</width>
       <height>17</height>
@@ -305,7 +305,7 @@
    <widget class="QLabel" name="label_trem3">
     <property name="geometry">
      <rect>
-      <x>610</x>
+      <x>600</x>
       <y>30</y>
       <width>21</width>
       <height>17</height>
@@ -414,6 +414,19 @@
      <string>T6</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="botao_pausar">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>360</y>
+      <width>99</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pausar</string>
+    </property>
+   </widget>
    <zorder>label_trilho3_8</zorder>
    <zorder>label_trilho3_6</zorder>
    <zorder>label_trilho3_4</zorder>
@@ -422,7 +435,7 @@
    <zorder>label_trilho3</zorder>
    <zorder>label_trilho4</zorder>
    <zorder>label_trem1</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>botao_iniciar</zorder>
    <zorder>label_trilho3_2</zorder>
    <zorder>label_trilho1_2</zorder>
    <zorder>label_trilho2_2</zorder>
@@ -439,6 +452,7 @@
    <zorder>label_trem5</zorder>
    <zorder>label_trilho2_6</zorder>
    <zorder>label_trem6</zorder>
+   <zorder>botao_pausar</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

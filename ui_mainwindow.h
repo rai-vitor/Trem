@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.4.1
+** Created by: Qt User Interface Compiler version 5.3.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -53,6 +53,7 @@ public:
     QLabel *label_trilho3_6;
     QLabel *label_trilho2_6;
     QLabel *label_trem6;
+    QPushButton *pushButton_2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -134,7 +135,7 @@ public:
         label_trilho3_7->setStyleSheet(QStringLiteral("QLabel { background: #87cefa}"));
         label_trem2 = new QLabel(centralWidget);
         label_trem2->setObjectName(QStringLiteral("label_trem2"));
-        label_trem2->setGeometry(QRect(350, 30, 21, 17));
+        label_trem2->setGeometry(QRect(330, 30, 21, 17));
         label_trem2->setStyleSheet(QStringLiteral("QLabel { background: #fab387}"));
         label_trem3 = new QLabel(centralWidget);
         label_trem3->setObjectName(QStringLiteral("label_trem3"));
@@ -164,6 +165,9 @@ public:
         label_trem6->setObjectName(QStringLiteral("label_trem6"));
         label_trem6->setGeometry(QRect(320, 270, 21, 17));
         label_trem6->setStyleSheet(QStringLiteral("QLabel { background: #fab387}"));
+        pushButton_2 = new QPushButton(centralWidget);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(830, 360, 99, 27));
         MainWindow->setCentralWidget(centralWidget);
         label_trilho3_8->raise();
         label_trilho3_6->raise();
@@ -190,9 +194,10 @@ public:
         label_trem5->raise();
         label_trilho2_6->raise();
         label_trem6->raise();
+        pushButton_2->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 952, 21));
+        menuBar->setGeometry(QRect(0, 0, 952, 25));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -214,7 +219,7 @@ public:
         label_trilho2->setText(QString());
         label_trilho3->setText(QString());
         label_trilho4->setText(QString());
-        pushButton->setText(QApplication::translate("MainWindow", "Ligar", 0));
+        pushButton->setText(QApplication::translate("MainWindow", "Iniciar", 0));
         label_trilho3_2->setText(QString());
         label_trilho1_2->setText(QString());
         label_trilho2_2->setText(QString());
@@ -234,6 +239,7 @@ public:
         label_trilho3_6->setText(QString());
         label_trilho2_6->setText(QString());
         label_trem6->setText(QApplication::translate("MainWindow", "T6", 0));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Pausar", 0));
     } // retranslateUi
 
 };

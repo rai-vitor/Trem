@@ -5,6 +5,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    flag = 1;
     ui->setupUi(this);
 
     sem1 = new Semaforo (1, 1 , IPC_CREAT | 0600);
@@ -73,7 +74,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_botao_iniciar_clicked()
 {
     trem1->start();
     trem2->start();
@@ -81,4 +82,24 @@ void MainWindow::on_pushButton_clicked()
     trem4->start();
     trem5->start();
     trem6->start();
+}
+
+void MainWindow::on_botao_pausar_clicked()
+{
+    if(flag == 1){
+        ui->pushButton_2->setText("Retomar");
+        flag = 0;
+    }
+
+    else if(flag == 0){
+        ui->pushButton_2->setText("Pausar");
+        flag = 1;
+    }
+
+    trem1->finalizar();
+    trem2->finalizar();
+    trem3->finalizar();
+    trem4->finalizar();
+    trem5->finalizar();
+    trem6->finalizar();
 }

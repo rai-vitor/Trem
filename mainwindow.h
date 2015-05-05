@@ -21,9 +21,11 @@ public slots:
     void updateInterface(int,int,int);
 
 private slots:
-    void on_pushButton_clicked();
+    void on_botao_iniciar_clicked();
+    void on_botao_pausar_clicked();
 
 private:
+    int flag; //Flag para saber se os trens estão parados ou em movimento. 1 = movimento, 0 = parado
     Ui::MainWindow *ui;
     Trem *trem1;
     Trem *trem2;

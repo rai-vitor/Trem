@@ -11,6 +11,8 @@ public:
     void run();
     void finalizar();
     void mover();
+    void continuar();
+
 
 signals:
     void updateGUI(int,int,int);
