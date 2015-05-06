@@ -87,12 +87,12 @@ void MainWindow::on_botao_iniciar_clicked()
 void MainWindow::on_botao_pausar_clicked()
 {
     if(flag == 1){
-        ui->pushButton_2->setText("Retomar");
+        ui->botao_pausar->setText("Retomar");
         flag = 0;
     }
 
     else if(flag == 0){
-        ui->pushButton_2->setText("Pausar");
+        ui->botao_pausar->setText("Pausar");
         flag = 1;
     }
 
