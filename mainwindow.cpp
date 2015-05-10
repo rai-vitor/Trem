@@ -14,6 +14,9 @@ MainWindow::MainWindow(QWidget *parent) :
     sem4 = new Semaforo (1234, 1 , IPC_CREAT | 0600);
     sem5 = new Semaforo (12345, 1 , IPC_CREAT | 0600);
     sem6 = new Semaforo (123456, 1 , IPC_CREAT | 0600);
+    sem7 = new Semaforo (1234567, 1 , IPC_CREAT | 0600);
+    sem8 = new Semaforo (12345678, 1 , IPC_CREAT | 0600);
+    sem9 = new Semaforo (123456789, 1 , IPC_CREAT | 0600);
 
     vetor.push_back(sem1);
     vetor.push_back(sem2);
@@ -21,23 +24,26 @@ MainWindow::MainWindow(QWidget *parent) :
     vetor.push_back(sem4);
     vetor.push_back(sem5);
     vetor.push_back(sem6);
+    vetor.push_back(sem7);
+    vetor.push_back(sem8);
+    vetor.push_back(sem9);
 
-    trem1 = new Trem(1, 90, 30, 200, vetor);
+    trem1 = new Trem(1, 90, 30, 100, vetor);
     connect(trem1,SIGNAL(updateGUI(int,int,int)),SLOT(updateInterface(int,int,int)));
 
-    trem2 = new Trem(2, 360, 30, 300, vetor);
+    trem2 = new Trem(2, 360, 30, 200, vetor);
     connect(trem2,SIGNAL(updateGUI(int,int,int)),SLOT(updateInterface(int,int,int)));
 
-    trem3 = new Trem(3, 630, 30, 400, vetor);
+    trem3 = new Trem(3, 630, 30, 300, vetor);
     connect(trem3,SIGNAL(updateGUI(int,int,int)),SLOT(updateInterface(int,int,int)));
 
-    trem4 = new Trem(4, 220, 150, 500, vetor);
+    trem4 = new Trem(4, 220, 150, 300, vetor);
     connect(trem4,SIGNAL(updateGUI(int,int,int)),SLOT(updateInterface(int,int,int)));
 
-    trem5 = new Trem(5, 490, 150, 600, vetor);
+    trem5 = new Trem(5, 490, 150, 100, vetor);
     connect(trem5,SIGNAL(updateGUI(int,int,int)),SLOT(updateInterface(int,int,int)));
 
-    trem6 = new Trem(6, 350, 270, 700, vetor);
+    trem6 = new Trem(6, 350, 270, 200, vetor);
     connect(trem6,SIGNAL(updateGUI(int,int,int)),SLOT(updateInterface(int,int,int)));
 
 

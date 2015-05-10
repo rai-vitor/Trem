@@ -34,7 +34,7 @@ private:
     Trem *trem5;
     Trem *trem6;
     QVector<Semaforo*> vetor;
-    Semaforo *sem1, *sem2, *sem3, *sem4, *sem5, *sem6;
+    Semaforo *sem1, *sem2, *sem3, *sem4, *sem5, *sem6, *sem7, *sem8, *sem9;
 };
 
 #endif // MAINWINDOW_H

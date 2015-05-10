@@ -143,7 +143,7 @@ public:
         label_trem3->setStyleSheet(QStringLiteral("QLabel { background: #fab387}"));
         label_trem4 = new QLabel(centralWidget);
         label_trem4->setObjectName(QStringLiteral("label_trem4"));
-        label_trem4->setGeometry(QRect(220, 150, 21, 17));
+        label_trem4->setGeometry(QRect(480, 150, 21, 17));
         label_trem4->setStyleSheet(QStringLiteral("QLabel { background: #fab387}"));
         label_trem5 = new QLabel(centralWidget);
         label_trem5->setObjectName(QStringLiteral("label_trem5"));
