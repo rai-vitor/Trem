@@ -33,7 +33,7 @@ public:
     QLabel *label_trilho2;
     QLabel *label_trilho3;
     QLabel *label_trilho4;
-    QPushButton *pushButton;
+    QPushButton *botao_iniciar;
     QLabel *label_trilho3_2;
     QLabel *label_trilho1_2;
     QLabel *label_trilho2_2;
@@ -53,7 +53,7 @@ public:
     QLabel *label_trilho3_6;
     QLabel *label_trilho2_6;
     QLabel *label_trem6;
-    QPushButton *pushButton_2;
+    QPushButton *botao_pausar;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -68,7 +68,7 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         label_trem1 = new QLabel(centralWidget);
         label_trem1->setObjectName(QStringLiteral("label_trem1"));
-        label_trem1->setGeometry(QRect(60, 30, 21, 17));
+        label_trem1->setGeometry(QRect(90, 30, 21, 17));
         label_trem1->setStyleSheet(QStringLiteral("QLabel { background: #fab387}"));
         label_trilho1 = new QLabel(centralWidget);
         label_trilho1->setObjectName(QStringLiteral("label_trilho1"));
@@ -86,9 +86,9 @@ public:
         label_trilho4->setObjectName(QStringLiteral("label_trilho4"));
         label_trilho4->setGeometry(QRect(60, 30, 21, 137));
         label_trilho4->setStyleSheet(QStringLiteral("QLabel { background: #87cefa}"));
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(830, 390, 99, 27));
+        botao_iniciar = new QPushButton(centralWidget);
+        botao_iniciar->setObjectName(QStringLiteral("botao_iniciar"));
+        botao_iniciar->setGeometry(QRect(830, 390, 99, 27));
         label_trilho3_2 = new QLabel(centralWidget);
         label_trilho3_2->setObjectName(QStringLiteral("label_trilho3_2"));
         label_trilho3_2->setGeometry(QRect(600, 30, 20, 137));
@@ -135,19 +135,19 @@ public:
         label_trilho3_7->setStyleSheet(QStringLiteral("QLabel { background: #87cefa}"));
         label_trem2 = new QLabel(centralWidget);
         label_trem2->setObjectName(QStringLiteral("label_trem2"));
-        label_trem2->setGeometry(QRect(330, 30, 21, 17));
+        label_trem2->setGeometry(QRect(360, 30, 21, 17));
         label_trem2->setStyleSheet(QStringLiteral("QLabel { background: #fab387}"));
         label_trem3 = new QLabel(centralWidget);
         label_trem3->setObjectName(QStringLiteral("label_trem3"));
-        label_trem3->setGeometry(QRect(600, 30, 21, 17));
+        label_trem3->setGeometry(QRect(630, 30, 21, 17));
         label_trem3->setStyleSheet(QStringLiteral("QLabel { background: #fab387}"));
         label_trem4 = new QLabel(centralWidget);
         label_trem4->setObjectName(QStringLiteral("label_trem4"));
-        label_trem4->setGeometry(QRect(190, 150, 21, 17));
+        label_trem4->setGeometry(QRect(220, 150, 21, 17));
         label_trem4->setStyleSheet(QStringLiteral("QLabel { background: #fab387}"));
         label_trem5 = new QLabel(centralWidget);
         label_trem5->setObjectName(QStringLiteral("label_trem5"));
-        label_trem5->setGeometry(QRect(460, 150, 21, 17));
+        label_trem5->setGeometry(QRect(490, 150, 21, 17));
         label_trem5->setStyleSheet(QStringLiteral("QLabel { background: #fab387}"));
         label_trilho3_8 = new QLabel(centralWidget);
         label_trilho3_8->setObjectName(QStringLiteral("label_trilho3_8"));
@@ -163,11 +163,11 @@ public:
         label_trilho2_6->setStyleSheet(QStringLiteral("QLabel { background: #87cefa}"));
         label_trem6 = new QLabel(centralWidget);
         label_trem6->setObjectName(QStringLiteral("label_trem6"));
-        label_trem6->setGeometry(QRect(320, 270, 21, 17));
+        label_trem6->setGeometry(QRect(350, 270, 21, 17));
         label_trem6->setStyleSheet(QStringLiteral("QLabel { background: #fab387}"));
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(830, 360, 99, 27));
+        botao_pausar = new QPushButton(centralWidget);
+        botao_pausar->setObjectName(QStringLiteral("botao_pausar"));
+        botao_pausar->setGeometry(QRect(830, 360, 99, 27));
         MainWindow->setCentralWidget(centralWidget);
         label_trilho3_8->raise();
         label_trilho3_6->raise();
@@ -177,7 +177,7 @@ public:
         label_trilho3->raise();
         label_trilho4->raise();
         label_trem1->raise();
-        pushButton->raise();
+        botao_iniciar->raise();
         label_trilho3_2->raise();
         label_trilho1_2->raise();
         label_trilho2_2->raise();
@@ -194,7 +194,7 @@ public:
         label_trem5->raise();
         label_trilho2_6->raise();
         label_trem6->raise();
-        pushButton_2->raise();
+        botao_pausar->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 952, 25));
@@ -219,7 +219,7 @@ public:
         label_trilho2->setText(QString());
         label_trilho3->setText(QString());
         label_trilho4->setText(QString());
-        pushButton->setText(QApplication::translate("MainWindow", "Iniciar", 0));
+        botao_iniciar->setText(QApplication::translate("MainWindow", "Iniciar", 0));
         label_trilho3_2->setText(QString());
         label_trilho1_2->setText(QString());
         label_trilho2_2->setText(QString());
@@ -239,7 +239,7 @@ public:
         label_trilho3_6->setText(QString());
         label_trilho2_6->setText(QString());
         label_trem6->setText(QApplication::translate("MainWindow", "T6", 0));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Pausar", 0));
+        botao_pausar->setText(QApplication::translate("MainWindow", "Pausar", 0));
     } // retranslateUi
 
 };

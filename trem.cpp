@@ -15,7 +15,7 @@ Trem::Trem(int ID, int x, int y, int vel, QVector<Semaforo*> vetor){
 
 void Trem::run(){
     while(true){
-        while(!stop){
+        while(!stop){/*
             switch(ID){
             case 1:
                 if(x == 60 && y == 30){
@@ -41,7 +41,7 @@ void Trem::run(){
                 break;
             default:
                 break;
-            }
+            }*/
             mover();
             msleep(velocidade);
         }
@@ -51,20 +51,20 @@ void Trem::run(){
 
 void Trem::mover(){
     emit updateGUI(ID, x, y);
-    if (deslocX < 27 && deslocY == 0){
+    if (deslocX < 24 && deslocY == 0){
         deslocX++;
         x+=10;
     }
 
-    else if (deslocX == 27 && deslocY < 12){
+    else if (deslocX == 24 && deslocY < 12){
         deslocY++;
         y+=10;
     }
-    else if(deslocX > 0 && deslocY == 12){
+    else if(deslocX > -3 && deslocY == 12){
         deslocX--;
         x-=10;
     }
-    else if(deslocX == 0 && deslocY > 0){
+    else if(deslocX == -3 && deslocY > 0){
         deslocY--;
         y-=10;
     }
