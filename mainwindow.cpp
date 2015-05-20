@@ -1,10 +1,15 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <iostream>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    servidor = new Server();
+    connect(servidor,SIGNAL(atualizar(int,int)),SLOT(cliente(int,int)));
+    servidor->start();
+
     flag = 1;
     ui->setupUi(this);
 
@@ -48,6 +53,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 
+
+
 }
 
 void MainWindow::updateInterface(int id, int x, int y){
@@ -73,6 +80,23 @@ void MainWindow::updateInterface(int id, int x, int y){
     default:
         break;
     }
+}
+
+void MainWindow::cliente(int vel, int trem){
+    std::cout<<"é tetraaaaaaa"<<std::endl;
+    if(trem == 1)
+        trem1->Velocidade(vel);
+    else if(trem == 2)
+        trem2->Velocidade(vel);
+    else if(trem == 3)
+        trem3->Velocidade(vel);
+    else if(trem == 4)
+        trem4->Velocidade(vel);
+    else if(trem == 5)
+        trem5->Velocidade(vel);
+    else if(trem == 6)
+        trem6->Velocidade(vel);
+
 }
 
 MainWindow::~MainWindow()

@@ -11,7 +11,7 @@ public:
     void run();
     void finalizar();
     void mover();
-    void continuar();
+    void Velocidade(int);
 
 
 signals:

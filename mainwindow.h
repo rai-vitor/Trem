@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "trem.h"
 #include "semaforo.h"
+#include "server.h"
 namespace Ui {
 class MainWindow;
 }
@@ -19,6 +20,7 @@ public:
 
 public slots:
     void updateInterface(int,int,int);
+    void cliente(int,int);
 
 private slots:
     void on_botao_iniciar_clicked();
@@ -35,6 +37,7 @@ private:
     Trem *trem6;
     QVector<Semaforo*> vetor;
     Semaforo *sem1, *sem2, *sem3, *sem4, *sem5, *sem6, *sem7, *sem8, *sem9;
+    Server *servidor;
 };
 
 #endif // MAINWINDOW_H

@@ -166,6 +166,7 @@ void Trem::finalizar(){
         stop = true;
 }
 
-void Trem::continuar(){
-    stop = false;
+void Trem::Velocidade(int vel){
+    vel = (10 - (vel+3)) * 100;
+    this->velocidade = vel;
 }
